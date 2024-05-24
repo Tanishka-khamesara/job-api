@@ -8,6 +8,11 @@ const createJob = async (req, res) => {
 
         // console.log(savedData);
         res.send(savedData)
+        res.json({
+            success: true,
+            message:"create job called"
+        })
+
 
     } catch (error) {
 
